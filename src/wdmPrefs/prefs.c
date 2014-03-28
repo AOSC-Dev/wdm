@@ -80,7 +80,7 @@ void AddSectionButton(Panel * panel, const char *iconfile)
 		color.alpha = 0;
 		filename = WMPathForResourceOfType((char *)iconfile, NULL);
 		if (filename) {
-			icon = WMCreateBlendedPixmapFromFile(WMWidgetScreen(button), filename, &color);
+			icon = WMCreateBlendedPixmapFromFile(WMWidgetScreen(button), filename, &color, 0, 0);
 			WMSetButtonImage(button, icon);
 			if (icon)
 				WMReleasePixmap(icon);
