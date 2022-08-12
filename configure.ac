@@ -177,7 +177,7 @@ AC_MSG_CHECKING([for ConsoleKit support])
 AC_MSG_RESULT([$with_console_kit])
 
 AS_IF([test "x$with_systemd" != "xno"],
-	  [PKG_CHECK_MODULES([SYSTEMD], [libsystemd-login libsystemd-daemon],
+	  [PKG_CHECK_MODULES([SYSTEMD], [libsystemd],
 						 [AC_DEFINE([WITH_SYSTEMD], [1], [Define if you wand wdm to be compiled with systemd support])
 						 with_systemd=yes
 						 ],
