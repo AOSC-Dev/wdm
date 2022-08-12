@@ -28,6 +28,7 @@
 #include <pwd.h>
 
 #include <sys/types.h>
+#include <sys/sysmacros.h>
 
 #ifdef WITH_CONSOLE_KIT
 #include <consolekit.h>
